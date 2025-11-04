@@ -1,0 +1,53 @@
+* { box-sizing: border-box; }
+html, body, #app { height: 100%; margin: 0; }
+body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f7f8fa; color: #222; }
+
+/* NavBar styles to match Vue */
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: #2563eb; color: white; }
+.brand { font-weight: 700; }
+.links { display: flex; align-items: center; gap: 12px; }
+.links a { color: white; text-decoration: none; padding: 6px 10px; border-radius: 6px; }
+.links a.router-link-active { background: rgba(255,255,255,0.2); }
+.user { opacity: 0.9; }
+.logout { background: rgba(255,255,255,0.2); color: #fff; border: 0; padding: 6px 10px; border-radius: 6px; cursor: pointer; }
+
+/* Home page */
+.btn { display: inline-block; margin-top: 12px; background: #2563eb; color: #fff; padding: 10px 16px; border-radius: 8px; text-decoration: none; }
+
+/* Machines page */
+.err { color: #ef4444; }
+.toolbar { display: grid; grid-template-columns: 1.2fr 1fr 1fr auto auto; gap: 12px; align-items: center; margin: 8px 0 12px; }
+.toolbar input, .toolbar select { width: 100%; padding: 8px 10px; border: 1px solid #ddd; border-radius: 8px; }
+.fav-only { display: flex; align-items: center; gap: 6px; white-space: nowrap; font-size: 14px; color: #333; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.card { background: #fff; border-radius: 10px; padding: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.card h3 { display: flex; align-items: center; justify-content: space-between; margin: 0 0 8px 0; }
+.fav { border: 1px solid #ddd; background: #fff; border-radius: 6px; padding: 2px 8px; cursor: pointer; }
+.fav.active { background: #fde68a; }
+.ok { color: #16a34a; } .busy { color: #ef4444; }
+.btn-green { display: inline-block; margin-top: 8px; background: #16a34a; color: #fff; padding: 8px 12px; border-radius: 6px; text-decoration: none; }
+@media (max-width: 900px) { .toolbar { grid-template-columns: 1fr 1fr; grid-auto-rows: auto; } }
+@media (max-width: 600px) { .toolbar { grid-template-columns: 1fr; } }
+
+/* Admin page */
+.add-card { background: #fff; border: 1px solid #e6eaf0; border-radius: 12px; padding: 14px; margin: 8px 0 12px; box-shadow: 0 1px 2px rgba(0,0,0,.04); }
+.add-card h3 { margin: 0 0 10px 0; font-size: 16px; color: #0f172a; }
+.add-grid12 { display: grid; grid-template-columns: repeat(12, 1fr); gap: 12px; align-items: end; }
+.span-2 { grid-column: span 2; }
+.span-4 { grid-column: span 4; }
+.span-8 { grid-column: span 8; }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field label { font-size: 13px; color: #6b7280; }
+.actions { display: flex; justify-content: flex-end; }
+.export { background: #fff; border: 1px solid #e6eaf0; border-radius: 10px; padding: 10px; margin: 8px 0 12px; }
+.controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.grp { display: flex; align-items: center; gap: 6px; }
+.toggle { display: flex; align-items: center; gap: 6px; margin-right: 8px; }
+input, select { padding: 8px 10px; border: 1px solid #d1d5db; border-radius: 8px; background: #fff; }
+.primary { background: #2563eb; color: #fff; border: 0; padding: 10px 16px; border-radius: 8px; cursor: pointer; }
+.table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+th, td { text-align: left; padding: 10px; border-bottom: 1px solid #eef2f7; }
+button { padding: 6px 10px; border-radius: 8px; border: 1px solid #d1d5db; background: #f8fafc; cursor: pointer; margin-right: 6px; }
+.danger { background: #ef4444; color: #fff; border: 0; }
+@media (max-width: 1100px) { .span-4 { grid-column: span 6; } .span-2 { grid-column: span 3; } .span-8 { grid-column: span 12; } .actions.span-4 { grid-column: span 12; } }
+@media (max-width: 640px) { .span-4, .span-2, .span-8 { grid-column: span 12; } .controls { flex-direction: column; align-items: flex-start; } }

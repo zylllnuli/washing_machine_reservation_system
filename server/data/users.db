@@ -1,0 +1,6 @@
+{"id":2,"username":"student","password":"123456","name":"学生","role":"user","building":"B区","_id":"FJ0nPS7Fs98Vs5vB"}
+{"id":1,"username":"admin","password":"admin123","name":"管理员","role":"admin","building":"A区","_id":"PFARqXW4IdYdI0Ot"}
+{"$$indexCreated":{"fieldName":"username","unique":true,"sparse":false}}
+{"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
+{"$$indexCreated":{"fieldName":"username","unique":true}}
+{"$$indexCreated":{"fieldName":"id","unique":true}}
