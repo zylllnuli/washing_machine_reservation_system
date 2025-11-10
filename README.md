@@ -106,5 +106,3 @@ server/   # Express 后端（NeDB 数据：server/data/*.db）
 ## 八、示例账号
 - 管理员：admin / admin123
 - 学生：student / 123456
-
-—— 如需部署指南/PPT 汇报大纲或接口文档细化，欢迎继续提出需求。
